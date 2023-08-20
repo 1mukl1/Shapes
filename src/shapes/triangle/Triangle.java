@@ -17,7 +17,7 @@ public class Triangle {
     }
 
     public class RightTriangle extends Triangle{
-        
+
     }
 
 }
