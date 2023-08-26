@@ -1,35 +1,21 @@
 package shapes.quadrilateral;
 
 public class Quadrilateral {
-    String name;
-    private int numbersOfAngles = 4;
+    String name = "Четырехугольник";
+    String properties = "";
+    int numbersOfAngles = 4;
 
-    public void ShowInfo(){
-        System.out.println("Это " + name + " Количество углов: " + numbersOfAngles);
+
+    public void showInfo() {
+        System.out.println("Это " + name + "; Количество углов: " + numbersOfAngles + "; " + properties);
     }
 
-    public class ConvexQuadrilateral extends Quadrilateral{
-
+    public String getName() {
+        return name;
     }
 
-    public class Parallelogram extends Quadrilateral{
-
+    public int getNumbersOfAngles() {
+        return numbersOfAngles;
     }
-
-    public class Rectangle extends Quadrilateral{
-
-    }
-
-    public class Square extends Quadrilateral{
-
-    }
-
-    public class Rhombus extends Quadrilateral{
-
-    }
-
-    public class Trapeze extends Quadrilateral{
-
-    }
-
 }
+

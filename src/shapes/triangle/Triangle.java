@@ -1,23 +1,20 @@
 package shapes.triangle;
 
 public class Triangle {
-    String name;
-    private int numbersOfAngles = 3;
+    public String name = "Треугольник";
+    public String properties = "";
+    public int numbersOfAngles = 3;
 
-    public void ShowInfo(){
-        System.out.println("Это " + name + "Количество углов: " + numbersOfAngles);
+    public void showInfo() {
+        System.out.println("Это " + name + "; Количество углов: " + numbersOfAngles + "; " + properties);
     }
 
-    public class IsoscelesTriangle extends Triangle{
-
+    public String getName() {
+        return name;
     }
 
-    public class EquilateralTriangle extends Triangle{
-
+    public int getNumbersOfAngles() {
+        return numbersOfAngles;
     }
-
-    public class RightTriangle extends Triangle{
-
-    }
-
 }
+
